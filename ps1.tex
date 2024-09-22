@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{listings}
+
+\title{Problem Set 1: Python and LaTeX Practice}
+\author{Po Yu Chen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report presents the solutions to Python tasks along with the corresponding mathematical explanation. The tasks include basic data types, lists, dictionaries, functions, classes, and inheritance.
+
+\section{Python Code}
+Below is the Python code for the assignment:
+
+\subsection{Task 1: Basic Data Types}
+\begin{lstlisting}[language=Python]
+x = 5
+y = 2.5
+print(x + y)
+print(y - x)
+print(x * y)
+print(x ** 2)
+print(x // 2)
+\end{lstlisting}
+
+\subsection{Task 2: List Manipulation}
+\begin{lstlisting}[language=Python]
+my_list = [1,2,3,4,5]
+my_list[2] = "hello"
+my_list.append("world")
+my_list.pop(0)
+print(my_list)
+\end{lstlisting}
+
+\subsection{Task 3: Dictionaries}
+\begin{lstlisting}[language=Python]
+student_scores = {"Alice": 85, "Bob": 90, "Charlie": 78}
+student_scores["David"] = 88
+student_scores.update({"Alice" : 95})
+student_scores.pop("Charlie")
+print(student_scores)
+\end{lstlisting}
+
+\subsection{Task 4: Functions}
+\begin{lstlisting}[language=Python]
+def calculate_area(width,height):
+    area = width * height
+    print(area)
+calculate_area(5,10)
+\end{lstlisting}
+
+\subsection{Task 5: Classes and Inheritance}
+\begin{lstlisting}[language=Python]
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        print("The animal speaks")
+class Dog(Animal):
+    def speak(self):
+        print("Woof! Woof!")
+Dog_instance = Dog("Buddy")
+Dog_instance.speak()
+\end{lstlisting}
+
+\section{Mathematical Explanation}
+The formula for calculating the area of a rectangle is given by:
+\[
+area = \text{width} \times \text{height}
+\]
+where \( area \) is the area, and the width and height are the dimensions of the rectangle.
+
+
+\section{Conclusion}
+The assignment allowed me to work on fundamental Python and LaTeX concepts. Doing the tasks and class exercises again and again helped me become familiar with Python programming and document preparation. 
+
+\end{document}
